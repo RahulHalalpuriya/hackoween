@@ -1,0 +1,26 @@
+{
+  "name": "kisanai-autonomous-farm-operations-system",
+  "version": "1.0.0",
+  "description": "KisanAI – Autonomous Farm Operations System (Agentic AI × SDG Hackathon)",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n \"BACKEND,FRONTEND\" -c \"green,cyan\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "deb": "npm run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "start": "concurrently -k -n \"BACKEND,FRONTEND\" -c \"green,cyan\" \"npm run start:backend\" \"npm run dev:frontend\"",
+    "start:backend": "npm --prefix backend start",
+    "seed": "npm --prefix backend run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "kisanai",
+    "agentic-ai",
+    "sdg-hackathon",
+    "autonomous-farming"
+  ],
+  "author": "Hackathon Team",
+  "license": "MIT"
+}
